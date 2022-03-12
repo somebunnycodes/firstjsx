@@ -1,21 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
+import PersonCard from './components/PersonCard';
 
 function App() {
   return (
-    <header className="App-header">
-      <h1>Hello Dojo!</h1>
-    
-      <h2>
-        Things I need to do:
-        <ul>
-          <li>Learn react</li>
-          <li>Climb Mt. Everest</li>
-          <li>Run a marathon</li>
-          <li>Feed the dogs</li>
-        </ul>
-      </h2>
-    </header>
+    <div className='App'>
+      <PersonCard 
+        firstName='Jane'
+        lastName='Doe'
+        age='45'
+        hairColour='Black' />
+        <PersonCard 
+        firstName='John'
+        lastName='Smith'
+        age='88'
+        hairColour='Brown' />
+        <PersonCard 
+        firstName='Millard'
+        lastName='Fillmore'
+        age='50'
+        hairColour='Brown' />
+        <PersonCard 
+        firstName='Maria'
+        lastName='Smith'
+        age='62'
+        hairColour='Brown' />
+    </div>
   );
 }
 
